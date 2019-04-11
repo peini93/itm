@@ -150,7 +150,7 @@ html, body {
   left: 370px;
   text-align: center;
   color: #fff;
-  text-shadow: #292b39 0.1em 0.1em 0.2em;
+  text-shadow: #000 0.1em 0.1em 0.1em;
 }
 .kv .slogan .box h1 {
   font-size: 25px;
@@ -497,6 +497,14 @@ html, body {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 10px;
+}
+.scebox .scetxt h2::after {
+  content: "";
+  display: block;
+  width: 78px;
+  height: 3px;
+  background-color: #11cdd4;
+  margin: 10px 0;
 }
 .scebox .scetxt p {
   font-size: 15px;
