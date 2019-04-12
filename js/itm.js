@@ -49,8 +49,6 @@ $(function(){
                 	$(".menu ul li a" ).removeClass('act');
                 	$(".menu ul li:nth-of-type(6) a").addClass('act');
                 	ACTION(6);    
-                }else if(sx<=0){
-                	history.go(0);    
                 }
 		})
 		GOTOP();
@@ -137,22 +135,22 @@ function MENU(){
 function ACTION(num){
 	switch(num){
 		case 1:
-			$("#b01").stop().delay(800).animate({opacity: 1, paddingTop:0});
+			$("#b01").stop().delay(300).animate({opacity: 1, paddingTop:0});
 		break;
 		case 2:
-			$("#b02").stop().delay(800).animate({opacity: 1, paddingTop:0});
+			$("#b02").stop().delay(300).animate({opacity: 1, paddingTop:0});
 		break;
 		case 3:
-			$("#b03").stop().delay(800).animate({opacity: 1, paddingTop:0});
+			$("#b03").stop().delay(300).animate({opacity: 1, paddingTop:0});
 		break;
 		case 4:
-			$("#b04").stop().delay(800).animate({opacity: 1, paddingTop:0});
+			$("#b04").stop().delay(300).animate({opacity: 1, paddingTop:0});
 		break;
 		case 5:
-			$("#b05").stop().delay(800).animate({opacity: 1, paddingTop:0});
+			$("#b05").stop().delay(300).animate({opacity: 1, paddingTop:0});
 		break;
 		case 6:
-			$("#b06").stop().delay(800).animate({opacity: 1, paddingTop:0});
+			$("#b06").stop().delay(300).animate({opacity: 1, paddingTop:0});
 		break;
 	}
 
