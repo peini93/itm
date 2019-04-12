@@ -8,13 +8,13 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 }
 
 $(function(){
-		// $('body').jpreLoader({
-		// 	splashID: "#jSplash",
-		// 	loaderVPos: '50%',
-		// 	splashVPos: '50%',
-		// 	autoClose: true
-		// }, function() { //callback function
-		// });
+		$('body').jpreLoader({
+			splashID: "#jSplash",
+			loaderVPos: '50%',
+			splashVPos: '50%',
+			autoClose: true
+		}, function() { //callback function
+		});
 
 		$(window).scroll(function(){
 			var sx = $(window).scrollTop();
