@@ -134,22 +134,22 @@ function MENU(){
 function ACTION(num){
 	switch(num){
 		case 1:
-			$("#b01").stop().delay(800).animate({opacity: 1, paddingTop:0},500);
+			$("#b01").stop().delay(500).animate({opacity: 1, paddingTop:0},500);
 		break;
 		case 2:
-			$("#b02").stop().delay(800).animate({opacity: 1, paddingTop:0},500);
+			$("#b02").stop().delay(500).animate({opacity: 1, paddingTop:0},500);
 		break;
 		case 3:
-			$("#b03").stop().delay(800).animate({opacity: 1, paddingTop:0},500);
+			$("#b03").stop().delay(500).animate({opacity: 1, paddingTop:0},500);
 		break;
 		case 4:
-			$("#b04").stop().delay(800).animate({opacity: 1, paddingTop:0},500);
+			$("#b04").stop().delay(500).animate({opacity: 1, paddingTop:0},500);
 		break;
 		case 5:
-			$("#b05").stop().delay(800).animate({opacity: 1, paddingTop:0},500);
+			$("#b05").stop().delay(500).animate({opacity: 1, paddingTop:0},500);
 		break;
 		case 6:
-			$("#b06").stop().delay(800).animate({opacity: 1, paddingTop:0},500);
+			$("#b06").stop().delay(500).animate({opacity: 1, paddingTop:0},500);
 		break;
 	}
 
