@@ -543,12 +543,12 @@ html, body {
   position: relative;
   margin: 20px auto;
   color: #292b39;
+  font-family: "Microsoft JhengHei";
 }
 .teambox .info .resume h2 {
   font-size: 16px;
   line-height: 23px;
   text-align: center;
-  font-family: "Microsoft JhengHei";
 }
 .teambox .info .resume h2::after {
   content: "";
