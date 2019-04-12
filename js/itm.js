@@ -25,30 +25,29 @@ $(function(){
 			var ah5 = $('#a05').offset().top-300;
 			var ah6 = $('#a06').offset().top-300;
 			if(sx>=ah1 && sx<ah2){
-					$(".menu ul li a" ).removeClass('act');
-                  $(".menu ul li:nth-of-type(1) a").addClass('act');
-                  ACTION(1);     
+									ACTION(1);  
+									$(".menu ul li a" ).removeClass('act');
+                  $(".menu ul li:nth-of-type(1) a").addClass('act');    
                 }else if(sx>=ah2 && sx<ah3){
+                	ACTION(2); 
                 	$(".menu ul li a" ).removeClass('act');
-                	$(".menu ul li:nth-of-type(2) a").addClass('act');
-                	ACTION(2);                	 
+                	$(".menu ul li:nth-of-type(2) a").addClass('act');              	 
                 }else if(sx>=ah3 && sx<ah4){
+                	ACTION(3); 
                 	$(".menu ul li a" ).removeClass('act');
-                	$(".menu ul li:nth-of-type(3) a").addClass('act');
-                	ACTION(3);               	        
+                	$(".menu ul li:nth-of-type(3) a").addClass('act');  	              	        
                 }else if(sx>=ah4 && sx<ah5){
-                	$(".menu ul li a" ).removeClass('act');
-                	$(".menu ul li:nth-of-type(4) a").addClass('act');
                 	ACTION(4);
-                	return false;        
+                	$(".menu ul li a" ).removeClass('act');
+                	$(".menu ul li:nth-of-type(4) a").addClass('act');       
                 }else if(sx>=ah5 && sx<ah6){
+                	ACTION(5);
                 	$(".menu ul li a" ).removeClass('act');
-                	$(".menu ul li:nth-of-type(5) a").addClass('act');
-                	ACTION(5); 
+                	$(".menu ul li:nth-of-type(5) a").addClass('act');	 
                 }else if(sx>=ah6){
+                	ACTION(6); 
                 	$(".menu ul li a" ).removeClass('act');
-                	$(".menu ul li:nth-of-type(6) a").addClass('act');
-                	ACTION(6);    
+                	$(".menu ul li:nth-of-type(6) a").addClass('act');   
                 }
 		})
 		GOTOP();
@@ -88,45 +87,45 @@ function GOTOP(){
 
 function MENU(){
  	$(".menu ul li:nth-of-type(1) a").on("click", function(){
+ 			ACTION(1);
 			$('html,body').stop().animate({scrollTop:$("#a01").offset().top},800);
 			$(".menu ul li a" ).removeClass('act');
-			$(this).addClass('act');
-			ACTION(1);
+			$(this).addClass('act');	
 			return false;
 	});
 	$(".menu ul li:nth-of-type(2) a").on("click", function(){
+			ACTION(2);
 			$('html,body').stop().animate({scrollTop:$("#a02").offset().top},800);
 			$(".menu ul li a" ).removeClass('act');
-			$(this).addClass('act');
-			ACTION(2);
+			$(this).addClass('act');	
 			return false;
 	});
 	$(".menu ul li:nth-of-type(3) a").on("click", function(){
+			ACTION(3);
 			$('html,body').stop().animate({scrollTop:$("#a03").offset().top},800);
 			$(".menu ul li a" ).removeClass('act');
 			$(this).addClass('act');
-			ACTION(3);
 			return false;
 	});
 	$(".menu ul li:nth-of-type(4) a").on("click", function(){
+			ACTION(4);
 			$('html,body').stop().animate({scrollTop:$("#a04").offset().top},800);
 			$(".menu ul li a" ).removeClass('act');
 			$(this).addClass('act');
-			ACTION(4);
 			return false;
 	});
 	$(".menu ul li:nth-of-type(5) a").on("click", function(){
+			ACTION(5);
 			$('html,body').stop().animate({scrollTop:$("#a05").offset().top},800);
 			$(".menu ul li a" ).removeClass('act');
-			$(this).addClass('act');
-			ACTION(5);
+			$(this).addClass('act');		
 			return false;
 	});
 	$(".menu ul li:nth-of-type(6) a").on("click", function(){
+			ACTION(6);
 			$('html,body').stop().animate({scrollTop:$("#a06").offset().top},800);
 			$(".menu ul li a" ).removeClass('act');
 			$(this).addClass('act');
-			ACTION(6);
 			return false;
 	});
 	
