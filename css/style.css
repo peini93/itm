@@ -569,6 +569,7 @@ html, body {
 .teambox .info .resume ul {
   width: 230px;
   margin-top: 20px;
+  font-family: "Microsoft JhengHei";
 }
 .teambox .info .resume ul li {
   list-style-type: disc;
