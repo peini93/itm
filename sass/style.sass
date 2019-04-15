@@ -32,6 +32,8 @@ html,body
 	font-size: 15px
 	z-index: 11
 	background-color: #222430
+	+rwd(mb)
+		min-width: 0
 	
 	.logo
 		float: left
@@ -42,6 +44,8 @@ html,body
 		float: right
 		margin-right: 30px
 		margin-top: 20px
+		+rwd(mb)
+			display: none
 
 	ul li
 		display: inline-block
@@ -81,6 +85,10 @@ html,body
 		height: 1000px
 		+por(70px,null,null,null,9)
 		margin: auto
+		+rwd(mb)
+			width: 100%
+			height: 700px
+
 		.box
 			width: 460px
 			height: 500px
@@ -88,6 +96,13 @@ html,body
 			text-align: center
 			color: #fff
 			text-shadow: #000 0.1em 0.1em 0.1em
+			+rwd(mb)
+				width: 320px
+				+poa(10%,null,null,50%)
+				margin-left: -160px
+			img
+				width: 100%
+				display: block
 			h1
 				font-size: 25px
 				font-family: "Microsoft JhengHei"
@@ -103,10 +118,15 @@ html,body
 					display: block
 					margin: 20px 0 20px 81px
 					background-color: $mc
+					+rwd(mb)
+						margin: 20px 0 20px 10px
 			p
 				font-size: 23px
 				line-height: 30px
 				color: $mc
+				+rwd(mb)
+					font-size: 4.8vw
+					line-height: 6vw
 			.scrollbtn
 				width: 25px
 				height: 40px
@@ -115,6 +135,9 @@ html,body
 				+border-radius(25px)
 				margin-left: 217px
 				margin-top: 150px
+				+rwd(mb)
+					margin-left: auto
+					margin-right: auto
 				&::after
 					content: ""
 					display: block
@@ -137,6 +160,9 @@ html,body
 		width: 100%
 		min-width: 1500px
 		+pof(70px,null,null,0,8)
+		+rwd(mb)
+			min-width: 100%
+
 
 
 
@@ -223,10 +249,14 @@ html,body
 	margin: auto
 	padding-top: 60px
 	opacity: 0
+	+rwd(mb)
+		width: 100%
 	.tittle_left
 		float: left
 		margin: 130px 0 90px 90px
 		font-family: "Microsoft JhengHei"
+		+rwd(mb)
+			margin: 10% 0 20% 10%
 		h2
 			font-size: 60px										
 			color: #fff
@@ -238,11 +268,15 @@ html,body
 				height: 3px
 				background-color: $mc
 				margin: 25px 0 13px 0
+			+rwd(mb)
+				font-size: 10vw
 
 		h3
 			font-size: 20px
 			color: $mc
 			font-weight: bold
+			+rwd(mb)
+				font-size: 5vw
 
 		p
 			width: 580px
@@ -251,6 +285,10 @@ html,body
 			margin-top: 40px
 			line-height: 26px
 			text-align: justify
+			+rwd(mb)
+				width: 90%
+				font-size: 3vw
+				line-height: 5vw
 			span
 				color: $mc
 	.tittle_right
@@ -259,9 +297,13 @@ html,body
 		margin: 130px 90px 90px 0
 		font-family: "Microsoft JhengHei"
 		color: $color
+		+rwd(mb)
+			margin: 10% 10% 20% 0
 		h2
 			font-size: 60px													
 			font-weight: bold
+			+rwd(mb)
+				font-size: 10vw
 			&::after
 				content: ""
 				display: block
@@ -273,10 +315,18 @@ html,body
 			font-size: 20px
 			color: $mc
 			font-weight: bold
+			+rwd(mb)
+				font-size: 5vw
 
 		p
 			font-size: 15px
 			margin-top: 30px
+			+rwd(mb)
+				width: 90%
+				font-size: 3vw
+				line-height: 5vw
+
+
 
 
 .flow
@@ -286,10 +336,17 @@ html,body
 	margin: 0 0 0 90px
 	padding-top: 65px
 	font-family: "Microsoft JhengHei"
+	+rwd(mb)
+		width: 80%
+		margin-left: 10%
 	&::before
 		content: ""
 		display: block
 		clear: both
+
+	img
+		width: 100%
+		display: block
 
 	.tag
 		width: 100%
@@ -300,6 +357,9 @@ html,body
 			width: 70px
 			height: 70px
 			flex: none
+			+rwd(mb)
+				width: 60px
+				height: 60px
 			img
 				width: 100%
 				display: block
@@ -310,6 +370,8 @@ html,body
 			h2
 				font-size: 25px
 				font-weight: bold
+				+rwd(mb)
+					font-size: 4.8vw
 				&::after
 					content: ""
 					display: block
@@ -320,6 +382,9 @@ html,body
 			p
 				font-size: 15px
 				line-height: 26px
+				+rwd(mb)
+					font-size: 3vw
+					line-height: 5vw
 
 
 .scebox
@@ -330,17 +395,29 @@ html,body
 	padding-top: 75px
 	font-family: "Microsoft JhengHei"
 	color: #fff
+	+rwd(mb)
+		width: 80%
+		margin-left: 10%
 	&::before
 		content: ""
 		display: block
 		clear: both
+
+	img
+		width: 100%
+		display: block
+
 	.scetxt
 		width: 100%
 		margin: 0 0 40px 50px
+		+rwd(mb)
+			margin-left: 0
 		h2
 			font-size: 25px
 			font-weight: bold
 			margin-bottom: 10px
+			+rwd(mb)
+				font-size: 4.8vw
 			&::after
 				content: ""
 				display: block
@@ -352,6 +429,9 @@ html,body
 		p
 			font-size: 15px
 			line-height: 26px
+			+rwd(mb)
+				font-size: 3vw
+				line-height: 5vw
 
 
 .teambox

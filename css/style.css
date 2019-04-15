@@ -78,6 +78,11 @@ html, body {
   z-index: 11;
   background-color: #222430;
 }
+@media only screen and (max-width: 960px) {
+  .menu {
+    min-width: 0;
+  }
+}
 .menu .logo {
   float: left;
   margin-left: 30px;
@@ -87,6 +92,11 @@ html, body {
   float: right;
   margin-right: 30px;
   margin-top: 20px;
+}
+@media only screen and (max-width: 960px) {
+  .menu ul {
+    display: none;
+  }
 }
 .menu ul li {
   display: inline-block;
@@ -142,6 +152,12 @@ html, body {
   z-index: 9;
   margin: auto;
 }
+@media only screen and (max-width: 960px) {
+  .kv .slogan {
+    width: 100%;
+    height: 700px;
+  }
+}
 .kv .slogan .box {
   width: 460px;
   height: 500px;
@@ -151,6 +167,19 @@ html, body {
   text-align: center;
   color: #fff;
   text-shadow: #000 0.1em 0.1em 0.1em;
+}
+@media only screen and (max-width: 960px) {
+  .kv .slogan .box {
+    width: 320px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-left: -160px;
+  }
+}
+.kv .slogan .box img {
+  width: 100%;
+  display: block;
 }
 .kv .slogan .box h1 {
   font-size: 25px;
@@ -170,10 +199,21 @@ html, body {
   margin: 20px 0 20px 81px;
   background-color: #11cdd4;
 }
+@media only screen and (max-width: 960px) {
+  .kv .slogan .box h2::after {
+    margin: 20px 0 20px 10px;
+  }
+}
 .kv .slogan .box p {
   font-size: 23px;
   line-height: 30px;
   color: #11cdd4;
+}
+@media only screen and (max-width: 960px) {
+  .kv .slogan .box p {
+    font-size: 4.8vw;
+    line-height: 6vw;
+  }
 }
 .kv .slogan .box .scrollbtn {
   width: 25px;
@@ -185,6 +225,12 @@ html, body {
   -moz-border-radius: 25px;
   margin-left: 217px;
   margin-top: 150px;
+}
+@media only screen and (max-width: 960px) {
+  .kv .slogan .box .scrollbtn {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .kv .slogan .box .scrollbtn::after {
   content: "";
@@ -259,6 +305,11 @@ html, body {
   top: 70px;
   left: 0;
   z-index: 8;
+}
+@media only screen and (max-width: 960px) {
+  .kv video {
+    min-width: 100%;
+  }
 }
 
 .wrap {
@@ -362,10 +413,20 @@ html, body {
   padding-top: 60px;
   opacity: 0;
 }
+@media only screen and (max-width: 960px) {
+  .all_box {
+    width: 100%;
+  }
+}
 .all_box .tittle_left {
   float: left;
   margin: 130px 0 90px 90px;
   font-family: "Microsoft JhengHei";
+}
+@media only screen and (max-width: 960px) {
+  .all_box .tittle_left {
+    margin: 10% 0 20% 10%;
+  }
 }
 .all_box .tittle_left h2 {
   font-size: 60px;
@@ -380,10 +441,20 @@ html, body {
   background-color: #11cdd4;
   margin: 25px 0 13px 0;
 }
+@media only screen and (max-width: 960px) {
+  .all_box .tittle_left h2 {
+    font-size: 10vw;
+  }
+}
 .all_box .tittle_left h3 {
   font-size: 20px;
   color: #11cdd4;
   font-weight: bold;
+}
+@media only screen and (max-width: 960px) {
+  .all_box .tittle_left h3 {
+    font-size: 5vw;
+  }
 }
 .all_box .tittle_left p {
   width: 580px;
@@ -392,6 +463,13 @@ html, body {
   margin-top: 40px;
   line-height: 26px;
   text-align: justify;
+}
+@media only screen and (max-width: 960px) {
+  .all_box .tittle_left p {
+    width: 90%;
+    font-size: 3vw;
+    line-height: 5vw;
+  }
 }
 .all_box .tittle_left p span {
   color: #11cdd4;
@@ -403,9 +481,19 @@ html, body {
   font-family: "Microsoft JhengHei";
   color: #292b39;
 }
+@media only screen and (max-width: 960px) {
+  .all_box .tittle_right {
+    margin: 10% 10% 20% 0;
+  }
+}
 .all_box .tittle_right h2 {
   font-size: 60px;
   font-weight: bold;
+}
+@media only screen and (max-width: 960px) {
+  .all_box .tittle_right h2 {
+    font-size: 10vw;
+  }
 }
 .all_box .tittle_right h2::after {
   content: "";
@@ -420,9 +508,21 @@ html, body {
   color: #11cdd4;
   font-weight: bold;
 }
+@media only screen and (max-width: 960px) {
+  .all_box .tittle_right h3 {
+    font-size: 5vw;
+  }
+}
 .all_box .tittle_right p {
   font-size: 15px;
   margin-top: 30px;
+}
+@media only screen and (max-width: 960px) {
+  .all_box .tittle_right p {
+    width: 90%;
+    font-size: 3vw;
+    line-height: 5vw;
+  }
 }
 
 .flow {
@@ -433,10 +533,20 @@ html, body {
   padding-top: 65px;
   font-family: "Microsoft JhengHei";
 }
+@media only screen and (max-width: 960px) {
+  .flow {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
 .flow::before {
   content: "";
   display: block;
   clear: both;
+}
+.flow img {
+  width: 100%;
+  display: block;
 }
 .flow .tag {
   width: 100%;
@@ -448,6 +558,12 @@ html, body {
   width: 70px;
   height: 70px;
   flex: none;
+}
+@media only screen and (max-width: 960px) {
+  .flow .tag .icon {
+    width: 60px;
+    height: 60px;
+  }
 }
 .flow .tag .icon img {
   width: 100%;
@@ -462,6 +578,11 @@ html, body {
   font-size: 25px;
   font-weight: bold;
 }
+@media only screen and (max-width: 960px) {
+  .flow .tag .txt h2 {
+    font-size: 4.8vw;
+  }
+}
 .flow .tag .txt h2::after {
   content: "";
   display: block;
@@ -474,6 +595,12 @@ html, body {
   font-size: 15px;
   line-height: 26px;
 }
+@media only screen and (max-width: 960px) {
+  .flow .tag .txt p {
+    font-size: 3vw;
+    line-height: 5vw;
+  }
+}
 
 .scebox {
   position: relative;
@@ -484,19 +611,39 @@ html, body {
   font-family: "Microsoft JhengHei";
   color: #fff;
 }
+@media only screen and (max-width: 960px) {
+  .scebox {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
 .scebox::before {
   content: "";
   display: block;
   clear: both;
 }
+.scebox img {
+  width: 100%;
+  display: block;
+}
 .scebox .scetxt {
   width: 100%;
   margin: 0 0 40px 50px;
+}
+@media only screen and (max-width: 960px) {
+  .scebox .scetxt {
+    margin-left: 0;
+  }
 }
 .scebox .scetxt h2 {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 10px;
+}
+@media only screen and (max-width: 960px) {
+  .scebox .scetxt h2 {
+    font-size: 4.8vw;
+  }
 }
 .scebox .scetxt h2::after {
   content: "";
@@ -509,6 +656,12 @@ html, body {
 .scebox .scetxt p {
   font-size: 15px;
   line-height: 26px;
+}
+@media only screen and (max-width: 960px) {
+  .scebox .scetxt p {
+    font-size: 3vw;
+    line-height: 5vw;
+  }
 }
 
 .teambox {
