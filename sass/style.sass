@@ -20,8 +20,90 @@ html,body
 #jSplash
 	width: 430px
 	height: 50px
+	position: relative
 	background: url(#{$img}loading.png) no-repeat
 	margin: auto
+
+.hb
+	float: right
+	z-index: 12
+	display: none
+	+rwd(mb)
+		display: block
+	a
+		width: 35px
+		height: 35px
+		display: block
+		margin: 35px 30px 0 0
+		@include box-sizing(border-box)
+		span
+			width: 35px
+			height: 3px
+			background-color: #fff
+			display: block
+			@include transition (0.3s)
+			&::before
+				@include transition (0.3s)
+				content: ""
+				display: block
+				position: absolute
+				margin-top: 13px
+				width: 35px
+				height: 3px
+				background-color: #fff
+			&::after
+				@include transition (0.3s)
+				content: ""
+				display: block
+				position: absolute
+				margin-top: -13px
+				width: 35px
+				height: 3px
+				background-color: #fff
+	.change span
+		background-color: rgba(0, 0, 0, 0)
+	.change span::before
+		margin-top: 0
+		@include transition (0.3s)
+		@include transform(rotate(#{-45}deg))
+	.change span::after
+		margin-top: 0
+		@include transition (0.3s)
+		@include transform(rotate(#{45}deg))
+
+.m_m
+	position: fixed
+	width: 100%
+	height: 100%
+	z-index: 12
+	background: rgba(0%,0%,0%,0.8)
+	top: 70px
+	right: 0
+	display: none
+	ul
+		width: 60%
+		height: 100%
+		background-color: $color
+		margin-left: 40%
+		li
+			padding: 20% 0 0 20%
+		li a
+			width: 60%
+			display: block
+			color: #fff
+			text-decoration: none
+			margin: 0
+			
+			&::after
+				content: ""
+				display: block
+				width: 35px
+				height: 3px
+				background-color: $mc
+				margin-top: 10px
+
+
+
 
 .menu
 	width: 100%
@@ -40,17 +122,17 @@ html,body
 		margin-left: 30px
 		margin-top: 20px
 
-	ul
+	.b_m
 		float: right
 		margin-right: 30px
 		margin-top: 20px
 		+rwd(mb)
 			display: none
 
-	ul li
+	.b_m li
 		display: inline-block
 		margin-left: 30px
-	ul li a
+	.b_m li a
 		width: 60px
 		line-height: 25px
 		color: #fff
