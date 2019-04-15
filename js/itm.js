@@ -77,9 +77,9 @@ function GOTOP(){
 	$(window).scroll(function(){
        var Y = $(window).scrollTop();
        if(Y>800){
-        $(".gotop").stop(true,false).animate({ bottom:50,opacity:1},800); 
+        $(".gotop").stop(true,false).animate({ bottom:3+"%",opacity:1},800); 
         }else{
-        $(".gotop").stop(true,false).animate({ bottom:20,opacity:0},800); 
+        $(".gotop").stop(true,false).animate({ bottom:0,opacity:0},800); 
         }
     });
 }

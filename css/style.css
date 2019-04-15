@@ -390,8 +390,8 @@ html, body {
   height: 60px;
   position: fixed;
   z-index: 12;
-  bottom: 50px;
-  right: 50px;
+  bottom: 3%;
+  right: 3%;
   opacity: 0;
 }
 .gotop a {
@@ -530,7 +530,6 @@ html, body {
 }
 @media only screen and (max-width: 960px) {
   .all_box .tittle_right p {
-    width: 90%;
     font-size: 3vw;
     line-height: 5vw;
   }
