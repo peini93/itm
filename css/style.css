@@ -342,11 +342,22 @@ html, body {
   height: 1220px;
   background: url(../img/teambg.png) center #fff no-repeat;
 }
+@media only screen and (max-width: 960px) {
+  .team {
+    height: auto;
+    background-size: 100% auto;
+  }
+}
 
 .news {
   width: 100%;
   height: 770px;
   background: url(../img/newsbg.png) center #292b39 no-repeat;
+}
+@media only screen and (max-width: 960px) {
+  .news {
+    height: auto;
+  }
 }
 
 .contact {
@@ -672,6 +683,13 @@ html, body {
   padding-top: 55px;
   display: flex;
 }
+@media only screen and (max-width: 960px) {
+  .teambox {
+    width: 80%;
+    margin-left: 10%;
+    display: block;
+  }
+}
 .teambox::before {
   content: "";
   display: block;
@@ -680,6 +698,11 @@ html, body {
 .teambox .info {
   width: 255px;
   flex-direction: row;
+}
+@media only screen and (max-width: 960px) {
+  .teambox .info {
+    width: 100%;
+  }
 }
 .teambox .info .pic {
   width: 230px;
@@ -740,6 +763,13 @@ html, body {
   margin: 0 0 0 90px;
   display: flex;
 }
+@media only screen and (max-width: 960px) {
+  .newsbox {
+    width: 80%;
+    margin-left: 10%;
+    display: block;
+  }
+}
 .newsbox::before {
   content: "";
   display: block;
@@ -749,9 +779,19 @@ html, body {
   width: 255px;
   flex-direction: row;
 }
+@media only screen and (max-width: 960px) {
+  .newsbox .info {
+    width: 100%;
+  }
+}
 .newsbox .info .newmain {
   width: 240px;
   margin-right: 15px;
+}
+@media only screen and (max-width: 960px) {
+  .newsbox .info .newmain {
+    margin: auto;
+  }
 }
 .newsbox .info a {
   text-decoration: none;
@@ -763,8 +803,7 @@ html, body {
   overflow: hidden;
 }
 .newsbox .info a .newpic img {
-  width: 240px;
-  height: 160px;
+  width: 100%;
   display: block;
   filter: brightness(0.7);
   -moz-transition: 0.3s;
@@ -831,6 +870,13 @@ html, body {
   margin: 0 0 0 90px;
   display: flex;
 }
+@media only screen and (max-width: 960px) {
+  .contactbox {
+    width: 80%;
+    margin-left: 10%;
+    display: block;
+  }
+}
 .contactbox::before {
   content: "";
   display: block;
@@ -885,6 +931,11 @@ html, body {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+@media only screen and (max-width: 960px) {
+  .contactbox .address .btn2 a {
+    margin: 20px auto 40px auto;
+  }
+}
 .contactbox .address .btn2 a:hover {
   background-color: #292b39;
   color: #fff;
@@ -893,5 +944,20 @@ html, body {
   flex: none;
   width: 660px;
   height: 335px;
-  background-color: #ff0000;
+}
+@media only screen and (max-width: 960px) {
+  .contactbox .map {
+    width: 100%;
+    height: auto;
+  }
+}
+.contactbox .map iframe {
+  width: 660px;
+  height: 335px;
+}
+@media only screen and (max-width: 960px) {
+  .contactbox .map iframe {
+    width: 100%;
+    height: auto;
+  }
 }
