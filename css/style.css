@@ -299,11 +299,12 @@ html, body {
   }
 }
 .kv .slogan .box {
-  width: 460px;
+  width: 347px;
   height: 500px;
   position: absolute;
   top: 200px;
-  left: 370px;
+  left: 50%;
+  margin-left: -173px;
   text-align: center;
   color: #fff;
   text-shadow: #000 0.1em 0.1em 0.1em;
@@ -334,6 +335,7 @@ html, body {
   font-size: 14.3px;
   margin-top: 10px;
   letter-spacing: 1px;
+  line-height: 16px;
   font-family: "Roboto", sans-serif;
 }
 @media only screen and (max-width: 960px) {
@@ -346,7 +348,7 @@ html, body {
   width: 298px;
   height: 3px;
   display: block;
-  margin: 20px 0 20px 81px;
+  margin: 20px 0 20px 25px;
   background-color: #11cdd4;
 }
 @media only screen and (max-width: 960px) {
@@ -356,8 +358,8 @@ html, body {
   }
 }
 .kv .slogan .box p {
-  font-size: 23px;
-  line-height: 30px;
+  font-size: 17px;
+  line-height: 25px;
   color: #11cdd4;
 }
 @media only screen and (max-width: 960px) {
@@ -376,7 +378,7 @@ html, body {
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
-  margin-left: 217px;
+  margin-left: 161px;
   margin-top: 150px;
 }
 @media only screen and (max-width: 960px) {
