@@ -192,20 +192,24 @@ html,body
 			color: #fff
 			text-shadow: #000 0.1em 0.1em 0.1em
 			+rwd(mb)
-				width: 320px
+				width: 250px
 				+poa(10%,null,null,50%)
-				margin-left: -160px
+				margin-left: -125px
 			img
 				width: 100%
 				display: block
 			h1
 				font-size: 25px
 				font-family: "Microsoft JhengHei"
+				+rwd(mb)
+					font-size: 4.4vw
 			h2
 				font-size: 14.3px
 				margin-top: 10px
 				letter-spacing: 1px
 				font-family: 'Roboto', sans-serif
+				+rwd(mb)
+					font-size: 3.7vw
 				&::after
 					content: ""
 					width: 298px
@@ -214,13 +218,16 @@ html,body
 					margin: 20px 0 20px 81px
 					background-color: $mc
 					+rwd(mb)
-						margin: 20px 0 20px 10px
+						width: 90%
+						margin: 10px auto
 			p
 				font-size: 23px
 				line-height: 30px
 				color: $mc
 				+rwd(mb)
-					font-size: 4.8vw
+					width: 93%
+					margin: auto
+					font-size: 4.2vw
 					line-height: 6vw
 			.scrollbtn
 				width: 25px

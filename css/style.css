@@ -310,11 +310,11 @@ html, body {
 }
 @media only screen and (max-width: 960px) {
   .kv .slogan .box {
-    width: 320px;
+    width: 250px;
     position: absolute;
     top: 10%;
     left: 50%;
-    margin-left: -160px;
+    margin-left: -125px;
   }
 }
 .kv .slogan .box img {
@@ -325,11 +325,21 @@ html, body {
   font-size: 25px;
   font-family: "Microsoft JhengHei";
 }
+@media only screen and (max-width: 960px) {
+  .kv .slogan .box h1 {
+    font-size: 4.4vw;
+  }
+}
 .kv .slogan .box h2 {
   font-size: 14.3px;
   margin-top: 10px;
   letter-spacing: 1px;
   font-family: "Roboto", sans-serif;
+}
+@media only screen and (max-width: 960px) {
+  .kv .slogan .box h2 {
+    font-size: 3.7vw;
+  }
 }
 .kv .slogan .box h2::after {
   content: "";
@@ -341,7 +351,8 @@ html, body {
 }
 @media only screen and (max-width: 960px) {
   .kv .slogan .box h2::after {
-    margin: 20px 0 20px 10px;
+    width: 90%;
+    margin: 10px auto;
   }
 }
 .kv .slogan .box p {
@@ -351,7 +362,9 @@ html, body {
 }
 @media only screen and (max-width: 960px) {
   .kv .slogan .box p {
-    font-size: 4.8vw;
+    width: 93%;
+    margin: auto;
+    font-size: 4.2vw;
     line-height: 6vw;
   }
 }
