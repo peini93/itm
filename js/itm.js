@@ -97,42 +97,42 @@ function MENU(){
  	$(".b_m li:nth-of-type(1) a").on("click", function(){
  			ACTION(1);
 			$('html,body').stop().animate({scrollTop:$("#a01").offset().top},800);
-			$(".menu ul li a" ).removeClass('act');
+			$(".b_m li a" ).removeClass('act');
 			$(this).addClass('act');	
 			return false;
 	});
 	$(".b_m li:nth-of-type(2) a").on("click", function(){
 			ACTION(2);
 			$('html,body').stop().animate({scrollTop:$("#a02").offset().top},800);
-			$(".menu ul li a" ).removeClass('act');
+			$(".b_m li a" ).removeClass('act');
 			$(this).addClass('act');	
 			return false;
 	});
 	$(".b_m li:nth-of-type(3) a").on("click", function(){
 			ACTION(3);
 			$('html,body').stop().animate({scrollTop:$("#a03").offset().top},800);
-			$(".menu ul li a" ).removeClass('act');
+			$(".b_m li a" ).removeClass('act');
 			$(this).addClass('act');
 			return false;
 	});
 	$(".b_m li:nth-of-type(4) a").on("click", function(){
 			ACTION(4);
 			$('html,body').stop().animate({scrollTop:$("#a04").offset().top},800);
-			$(".menu ul li a" ).removeClass('act');
+			$(".b_m li a" ).removeClass('act');
 			$(this).addClass('act');
 			return false;
 	});
 	$(".b_m li:nth-of-type(5) a").on("click", function(){
 			ACTION(5);
 			$('html,body').stop().animate({scrollTop:$("#a05").offset().top},800);
-			$(".menu ul li a" ).removeClass('act');
+			$(".b_m li a" ).removeClass('act');
 			$(this).addClass('act');		
 			return false;
 	});
 	$(".b_m li:nth-of-type(6) a").on("click", function(){
 			ACTION(6);
 			$('html,body').stop().animate({scrollTop:$("#a06").offset().top},800);
-			$(".menu ul li a" ).removeClass('act');
+			$(".b_m li a" ).removeClass('act');
 			$(this).addClass('act');
 			return false;
 	});

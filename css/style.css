@@ -249,10 +249,10 @@ html, body {
 .menu .b_m li a:hover::after {
   width: 100%;
 }
-.menu .act {
+.menu .b_m .act {
   color: #11cdd4;
 }
-.menu .act::after {
+.menu .b_m .act::after {
   content: "";
   display: block;
   width: 100%;
