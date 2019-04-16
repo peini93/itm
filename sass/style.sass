@@ -23,6 +23,19 @@ html,body
 	position: relative
 	background: url(#{$img}loading.png) no-repeat
 	margin: auto
+	+rwd(mb)
+		width: 215px
+		height: 25px
+		background-size: 100% auto
+
+#jpreLoader
+	+rwd(mb)
+		margin-top: -30px
+		width: 70%
+#jprePercentage
+	+rwd(mb)
+		top: 0
+		width: 70%
 
 .hb
 	float: right
@@ -244,6 +257,15 @@ html,body
 		+pof(70px,null,null,0,8)
 		+rwd(mb)
 			min-width: 100%
+	.v1
+		display: block
+		+rwd(mb)
+			display: none
+
+	.v2
+		display: none
+		+rwd(mb)
+			display: block
 
 
 
@@ -257,17 +279,31 @@ html,body
 .about
 	width: 100%
 	height: 630px
-	background: url(../img/about_itm.png) center 40px  $color no-repeat
+	background: url(../img/about_itm.png) center 40px $color no-repeat
+	+rwd(mb)
+		height: 730px
+		background: url(../img/itm_bg_m_01.png) center bottom $color no-repeat
+		background-size: 100% auto
+
 
 .core
 	width: 100%
 	height: 2220px
 	background: url(../img/corebg.png) center #fff no-repeat
+	+rwd(mb)
+		height: auto
+		background: url(../img/itm_bg_m_02.png) center top no-repeat, url(../img/itm_bg_m_03.png) center bottom no-repeat
+		background-color: #fff
+		background-size: 100% auto
 
 .sce
 	width: 100%
 	height: 2130px
 	background: url(../img/scbg.png) center $color no-repeat
+	+rwd(mb)
+		height: auto
+		background: url(../img/itm_bg_m_04.png) center repeat
+		background-size: 100% auto
 
 .team
 	width: 100%
@@ -275,6 +311,8 @@ html,body
 	background: url(../img/teambg.png) center #fff no-repeat
 	+rwd(mb)
 		height: auto
+		background: url(../img/itm_bg_m_05.png) center top no-repeat, url(../img/itm_bg_m_06.png) center bottom no-repeat
+		background-color: #fff
 		background-size: 100% auto
 
 .news
@@ -283,11 +321,18 @@ html,body
 	background: url(../img/newsbg.png) center $color no-repeat
 	+rwd(mb)
 		height: auto
+		background: url(../img/itm_bg_m_07.png) center top #131723 no-repeat
+		background-size: 100% auto
 
 .contact
 	width: 100%
 	height: 950px
 	background: url(../img/contactbg.png) center #fff no-repeat
+	+rwd(mb)
+		height: auto
+		background: url(../img/itm_bg_m_08.png) center top #fff no-repeat
+		background-size: 100% auto
+
 
 .footer
 	width: 100%
@@ -425,6 +470,8 @@ html,body
 	+rwd(mb)
 		width: 80%
 		margin-left: 10%
+		padding-top: 0
+		padding-bottom: 20%
 	&::before
 		content: ""
 		display: block
@@ -472,7 +519,6 @@ html,body
 					font-size: 3vw
 					line-height: 5vw
 
-
 .scebox
 	position: relative
 	width: 1020px
@@ -484,6 +530,8 @@ html,body
 	+rwd(mb)
 		width: 80%
 		margin-left: 10%
+		padding-bottom: 20%
+		padding-top: 0
 	&::before
 		content: ""
 		display: block
@@ -520,6 +568,16 @@ html,body
 				line-height: 5vw
 
 
+.flow .p_img,.scebox .p_img
+	display: block
+	+rwd(mb)
+		display: none
+
+.flow .m_img,.scebox .m_img
+	display: none
+	+rwd(mb)
+		display: block
+
 .teambox
 	position: relative
 	width: 1020px
@@ -531,6 +589,8 @@ html,body
 		width: 80%
 		margin-left: 10%
 		display: block
+		padding-top: 0
+		padding-bottom: 20%
 	&::before
 		content: ""
 		display: block
@@ -594,6 +654,7 @@ html,body
 		width: 80%
 		margin-left: 10%
 		display: block
+		padding-bottom: 20%
 
 	&::before
 		content: ""
@@ -672,6 +733,7 @@ html,body
 		width: 80%
 		margin-left: 10%
 		display: block
+		padding-bottom: 20%
 
 	&::before
 		content: ""

@@ -56,11 +56,11 @@ $(function(){
 		MM();
 
 		$(".hb a").click(function() {
-    	$(".hb a").toggleClass("change");
-    	$(".m_m").slideToggle("slow");
+	    	$(".hb a").toggleClass("change");
+	    	// $(".m_m").slideToggle("slow");
+	    	$( ".m_m" ).animate({width: 'toggle'},300); 
+  		});
 
-    	// $( ".m_m" ).animate({width: 'toggle'},300); 
-  	});
 
 		// var swiper = new Swiper('.swiper-container', {
 		// 	loop: true,

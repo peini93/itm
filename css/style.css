@@ -68,6 +68,27 @@ html, body {
   background: url(../img/loading.png) no-repeat;
   margin: auto;
 }
+@media only screen and (max-width: 960px) {
+  #jSplash {
+    width: 215px;
+    height: 25px;
+    background-size: 100% auto;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  #jpreLoader {
+    margin-top: -30px;
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  #jprePercentage {
+    top: 0;
+    width: 70%;
+  }
+}
 
 .hb {
   float: right;
@@ -430,6 +451,22 @@ html, body {
     min-width: 100%;
   }
 }
+.kv .v1 {
+  display: block;
+}
+@media only screen and (max-width: 960px) {
+  .kv .v1 {
+    display: none;
+  }
+}
+.kv .v2 {
+  display: none;
+}
+@media only screen and (max-width: 960px) {
+  .kv .v2 {
+    display: block;
+  }
+}
 
 .wrap {
   width: 100%;
@@ -443,17 +480,39 @@ html, body {
   height: 630px;
   background: url(../img/about_itm.png) center 40px #292b39 no-repeat;
 }
+@media only screen and (max-width: 960px) {
+  .about {
+    height: 730px;
+    background: url(../img/itm_bg_m_01.png) center bottom #292b39 no-repeat;
+    background-size: 100% auto;
+  }
+}
 
 .core {
   width: 100%;
   height: 2220px;
   background: url(../img/corebg.png) center #fff no-repeat;
 }
+@media only screen and (max-width: 960px) {
+  .core {
+    height: auto;
+    background: url(../img/itm_bg_m_02.png) center top no-repeat, url(../img/itm_bg_m_03.png) center bottom no-repeat;
+    background-color: #fff;
+    background-size: 100% auto;
+  }
+}
 
 .sce {
   width: 100%;
   height: 2130px;
   background: url(../img/scbg.png) center #292b39 no-repeat;
+}
+@media only screen and (max-width: 960px) {
+  .sce {
+    height: auto;
+    background: url(../img/itm_bg_m_04.png) center repeat;
+    background-size: 100% auto;
+  }
 }
 
 .team {
@@ -464,6 +523,8 @@ html, body {
 @media only screen and (max-width: 960px) {
   .team {
     height: auto;
+    background: url(../img/itm_bg_m_05.png) center top no-repeat, url(../img/itm_bg_m_06.png) center bottom no-repeat;
+    background-color: #fff;
     background-size: 100% auto;
   }
 }
@@ -476,6 +537,8 @@ html, body {
 @media only screen and (max-width: 960px) {
   .news {
     height: auto;
+    background: url(../img/itm_bg_m_07.png) center top #131723 no-repeat;
+    background-size: 100% auto;
   }
 }
 
@@ -483,6 +546,13 @@ html, body {
   width: 100%;
   height: 950px;
   background: url(../img/contactbg.png) center #fff no-repeat;
+}
+@media only screen and (max-width: 960px) {
+  .contact {
+    height: auto;
+    background: url(../img/itm_bg_m_08.png) center top #fff no-repeat;
+    background-size: 100% auto;
+  }
 }
 
 .footer {
@@ -666,6 +736,8 @@ html, body {
   .flow {
     width: 80%;
     margin-left: 10%;
+    padding-top: 0;
+    padding-bottom: 20%;
   }
 }
 .flow::before {
@@ -744,6 +816,8 @@ html, body {
   .scebox {
     width: 80%;
     margin-left: 10%;
+    padding-bottom: 20%;
+    padding-top: 0;
   }
 }
 .scebox::before {
@@ -793,6 +867,24 @@ html, body {
   }
 }
 
+.flow .p_img, .scebox .p_img {
+  display: block;
+}
+@media only screen and (max-width: 960px) {
+  .flow .p_img, .scebox .p_img {
+    display: none;
+  }
+}
+
+.flow .m_img, .scebox .m_img {
+  display: none;
+}
+@media only screen and (max-width: 960px) {
+  .flow .m_img, .scebox .m_img {
+    display: block;
+  }
+}
+
 .teambox {
   position: relative;
   width: 1020px;
@@ -806,6 +898,8 @@ html, body {
     width: 80%;
     margin-left: 10%;
     display: block;
+    padding-top: 0;
+    padding-bottom: 20%;
   }
 }
 .teambox::before {
@@ -886,6 +980,7 @@ html, body {
     width: 80%;
     margin-left: 10%;
     display: block;
+    padding-bottom: 20%;
   }
 }
 .newsbox::before {
@@ -993,6 +1088,7 @@ html, body {
     width: 80%;
     margin-left: 10%;
     display: block;
+    padding-bottom: 20%;
   }
 }
 .contactbox::before {
