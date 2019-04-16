@@ -58,7 +58,7 @@ $(function(){
 		$(".hb a").click(function() {
 	    	$(".hb a").toggleClass("change");
 	    	// $(".m_m").slideToggle("slow");
-	    	$( ".m_m" ).animate({width: 'toggle'},300); 
+	    	$( ".m_m" ).stop(true,false).animate({width:"toggle"},300); 
   		});
 
 
