@@ -1031,8 +1031,10 @@ html, body {
   overflow: hidden;
 }
 .newsbox .info a .newpic img {
-  width: 100%;
+  width: 240px;
+  height: 160px;
   display: block;
+  margin: 0;
   filter: brightness(0.7);
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -1050,6 +1052,7 @@ html, body {
 }
 .newsbox .info a h2 {
   font-size: 15px;
+  height: 75px;
   color: #fff;
   line-height: 24px;
   -moz-transition: 0.3s;
