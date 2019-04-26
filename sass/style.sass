@@ -326,8 +326,8 @@ html,body
 
 .news
 	width: 100%
-	height: 770px
-	background: url(../img/newsbg.png) center $color no-repeat
+	height: auto
+	background: url(../img/newsbg.png) center top #131723 no-repeat
 	+rwd(mb)
 		height: auto
 		background: url(../img/itm_bg_m_07.png) center top #131723 no-repeat
@@ -658,7 +658,6 @@ html,body
 	width: 1020px
 	height: auto
 	margin: 0 0 0 90px
-	display: flex
 	+rwd(mb)
 		width: 80%
 		margin-left: 10%
@@ -671,7 +670,9 @@ html,body
 		clear: both
 	.info
 		width: 255px
-		flex-direction: row
+		display: inline-flex
+		flex-wrap: nowrap
+		margin: 0 0 20px -4px
 		+rwd(mb)
 			width: 100%
 		.newmain
@@ -706,6 +707,8 @@ html,body
 				color: #fff
 				line-height: 24px
 				@include transition (0.3s)
+				+rwd(mb)
+					height: auto
 
 			.btn
 				width: 90px
