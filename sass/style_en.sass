@@ -1,0 +1,814 @@
+@import compass/utilities/color/brightness
+@import compass/reset
+@import compass/css3
+@import myMixin
+
+
+$ff1:"Noto Sans SC","sans-serif"
+$w:1200px
+$img:"../img/"
+$color:#292b39
+$mc:#11cdd4
+
+
+html,body
+	padding: 0
+	margin: 0
+	font-family: $ff1
+	background-color: $color
+	
+#jSplash
+	width: 430px
+	height: 50px
+	position: relative
+	background: url(#{$img}loading.png) no-repeat
+	margin: auto
+	+rwd(mb)
+		width: 215px
+		height: 25px
+		background-size: 100% auto
+
+#jpreLoader
+	+rwd(mb)
+		margin-top: -30px
+		width: 70%
+#jprePercentage
+	+rwd(mb)
+		top: 0
+		width: 70%
+
+.hb
+	float: right
+	z-index: 12
+	display: none
+	+rwd(mb)
+		display: block
+	a
+		width: 35px
+		height: 35px
+		display: block
+		margin: 35px 30px 0 0
+		@include box-sizing(border-box)
+		span
+			width: 35px
+			height: 3px
+			background-color: #fff
+			display: block
+			@include transition (0.3s)
+			&::before
+				@include transition (0.3s)
+				content: ""
+				display: block
+				position: absolute
+				margin-top: 13px
+				width: 35px
+				height: 3px
+				background-color: #fff
+			&::after
+				@include transition (0.3s)
+				content: ""
+				display: block
+				position: absolute
+				margin-top: -13px
+				width: 35px
+				height: 3px
+				background-color: #fff
+	.change span
+		background-color: rgba(0, 0, 0, 0)
+	.change span::before
+		margin-top: 0
+		@include transition (0.3s)
+		@include transform(rotate(#{-45}deg))
+	.change span::after
+		margin-top: 0
+		@include transition (0.3s)
+		@include transform(rotate(#{45}deg))
+
+.m_m
+	position: fixed
+	width: 100%
+	height: 100%
+	z-index: 12
+	background: rgba(0%,0%,0%,0.8)
+	top: 70px
+	right: 0
+	display: none
+	ul
+		width: 300px
+		height: 100%
+		background-color: $color
+		margin-left: 40%
+		li
+			padding: 12% 0 0 20%
+		li a
+			width: 60%
+			display: block
+			color: #fff
+			text-decoration: none
+			margin: 0
+			
+			&::after
+				content: ""
+				display: block
+				width: 35px
+				height: 3px
+				background-color: $mc
+				margin-top: 10px
+
+
+
+
+.menu
+	width: 100%
+	min-width: $w
+	height: 70px
+	position: fixed
+	top: 0
+	font-size: 15px
+	z-index: 11
+	background-color: #222430
+	+rwd(mb)
+		min-width: 0
+	
+	.logo
+		float: left
+		margin-left: 30px
+		margin-top: 20px
+
+	.b_m
+		float: right
+		margin-right: 30px
+		margin-top: 20px
+		+rwd(mb)
+			display: none
+
+	.b_m li
+		display: inline-block
+		margin-left: 30px
+	.b_m li a
+		width: 60px
+		line-height: 25px
+		color: #fff
+		text-align: center
+		text-decoration: none
+		@include transition (0.3s)
+		&:hover
+			color: #11cdd4
+		&::after
+			content: ""
+			display: block
+			width: 0%
+			height: 3px
+			background-color: $mc
+			@include transition (0.3s)
+		&:hover::after
+			width: 100%
+	.b_m .act
+		color: #11cdd4
+		&::after
+			content: ""
+			display: block
+			width: 100%
+			height: 3px
+			background-color: $mc
+
+
+.kv
+	width: 100%
+	.slogan
+		width: $w
+		height: 1000px
+		+por(70px,null,null,null,9)
+		margin: auto
+		+rwd(mb)
+			width: 100%
+			height: 700px
+
+		.box
+			width: 347px
+			height: 500px
+			+poa(200px,null,null,50%)
+			margin-left: -173px
+			text-align: center
+			color: #fff
+			text-shadow: #000 0.1em 0.1em 0.1em
+			+rwd(mb)
+				width: 250px
+				+poa(10%,null,null,50%)
+				margin-left: -125px
+			img
+				width: 100%
+				display: block
+			h1
+				font-size: 25px
+				font-family: "Microsoft JhengHei"
+				+rwd(mb)
+					font-size: 4.4vw
+			h2
+				font-size: 14.3px
+				margin-top: 10px
+				letter-spacing: 1px
+				line-height: 16px
+				font-family: 'Roboto', sans-serif
+				+rwd(mb)
+					font-size: 3.7vw
+				&::after
+					content: ""
+					width: 298px
+					height: 3px
+					display: block
+					margin: 20px 0 20px 25px
+					background-color: $mc
+					+rwd(mb)
+						width: 90%
+						margin: 10px auto
+			p
+				font-size: 17px
+				line-height: 25px
+				color: $mc
+				+rwd(mb)
+					width: 93%
+					margin: auto
+					font-size: 4.2vw
+					line-height: 6vw
+			.scrollbtn
+				width: 25px
+				height: 40px
+				position: relative
+				border: 2px solid #fff
+				+border-radius(25px)
+				margin-left: 161px
+				margin-top: 150px
+				+rwd(mb)
+					margin-left: auto
+					margin-right: auto
+				&::after
+					content: ""
+					display: block
+					width: 10px
+					height: 10px
+					+border-radius(25px)
+					background-color: #fff
+					+poa(5px,unll,unll,7px)
+					+keyframes(hani)
+						0%
+							+transform(translate(0,0))
+						100%
+							+transform(translate(0,20px))
+					+animation(hani 0.8s infinite alternate linear)
+
+
+
+				
+	video
+		width: 100%
+		min-width: 1500px
+		+pof(70px,null,null,0,8)
+		+rwd(mb)
+			min-width: 100%
+	.v1
+		display: block
+		+rwd(mb)
+			display: none
+
+	.v2
+		display: none
+		+rwd(mb)
+			display: block
+
+
+
+
+.wrap
+	width: 100%
+	height: auto
+	position: relative
+	z-index: 10
+
+.about
+	width: 100%
+	height: 630px
+	background: url(../img/about_itm.png) center 40px $color no-repeat
+	+rwd(mb)
+		height: 730px
+		background: url(../img/itm_bg_m_01.png) center bottom $color no-repeat
+		background-size: 100% auto
+
+
+.core
+	width: 100%
+	height: 2220px
+	background: url(../img/corebg.png) center #fff no-repeat
+	+rwd(mb)
+		height: auto
+		background: url(../img/itm_bg_m_02.png) center top no-repeat, url(../img/itm_bg_m_03.png) center bottom no-repeat
+		background-color: #fff
+		background-size: 100% auto
+
+.sce
+	width: 100%
+	height: 2300px
+	background: url(../img/scbg.png) center #121213 no-repeat
+	+rwd(mb)
+		height: auto
+		background: url(../img/itm_bg_m_04.png) center repeat
+		background-size: 100% auto
+
+.team
+	width: 100%
+	height: 1220px
+	background: url(../img/teambg.png) center #fff no-repeat
+	+rwd(mb)
+		height: auto
+		background: url(../img/itm_bg_m_05.png) center top no-repeat, url(../img/itm_bg_m_06.png) center bottom no-repeat
+		background-color: #fff
+		background-size: 100% auto
+
+.news
+	width: 100%
+	height: auto
+	background: url(../img/newsbg.png) center top #131723 no-repeat
+	+rwd(mb)
+		height: auto
+		background: url(../img/itm_bg_m_07.png) center top #131723 no-repeat
+		background-size: 100% auto
+
+.contact
+	width: 100%
+	height: 950px
+	background: url(../img/contactbg.png) center #fff no-repeat
+	+rwd(mb)
+		height: auto
+		background: url(../img/itm_bg_m_08.png) center top #fff no-repeat
+		background-size: 100% auto
+
+
+.footer
+	width: 100%
+	height: 100px
+	background-color: $color
+	position: relative
+	display: inline-block
+	.foimg
+		width: 63px
+		height: 27px
+		margin: 25px auto 10px auto 
+	p
+		text-align: center
+		font-size: 12px
+		font-family: "Microsoft JhengHei"
+		color: #fff
+
+.gotop
+	width: 60px
+	height: 60px
+	position: fixed
+	z-index: 12
+	bottom: 3%
+	right: 3%
+	opacity: 0
+	a
+		width: 60px
+		height: 60px
+		line-height: 60px
+		+border-radius(60px)
+		display: block
+		font-size: 15px	
+		background-color: $mc
+		color: $color
+		text-align: center
+		text-decoration: none
+		@include transition (0.3s)
+		&:hover
+			color: $mc
+			background-color: $color
+
+
+.all_box
+	width: $w
+	position: relative
+	margin: auto
+	padding-top: 60px
+	opacity: 0
+	+rwd(mb)
+		width: 100%
+	.tittle_left
+		float: left
+		margin: 130px 0 90px 90px
+		font-family: "Microsoft JhengHei"
+		+rwd(mb)
+			margin: 10% 0 20% 10%
+		h2
+			font-size: 60px										
+			color: #fff
+			font-weight: bold
+			&::after
+				content: ""
+				display: block
+				width: 78px
+				height: 3px
+				background-color: $mc
+				margin: 25px 0 13px 0
+			+rwd(mb)
+				font-size: 10vw
+
+		h3
+			font-size: 20px
+			color: $mc
+			font-weight: bold
+			+rwd(mb)
+				font-size: 5vw
+
+		p
+			width: 580px
+			font-size: 15px
+			color: #fff
+			margin-top: 40px
+			line-height: 26px
+			text-align: justify
+			+rwd(mb)
+				width: 90%
+				font-size: 3vw
+				line-height: 5vw
+			span
+				color: $mc
+	.tittle_right
+		float: right
+		text-align: right
+		margin: 130px 90px 90px 0
+		font-family: "Microsoft JhengHei"
+		color: $color
+		+rwd(mb)
+			margin: 10% 10% 20% 0
+		h2
+			font-size: 60px													
+			font-weight: bold
+			+rwd(mb)
+				font-size: 10vw
+			&::after
+				content: ""
+				display: block
+				width: 78px
+				height: 3px
+				background-color: $mc
+				margin: 25px 0 13px 339px
+		h3
+			font-size: 20px
+			color: $mc
+			font-weight: bold
+			+rwd(mb)
+				font-size: 5vw
+
+		p
+			font-size: 15px
+			margin-top: 30px
+			+rwd(mb)
+				font-size: 3vw
+				line-height: 5vw
+
+
+
+
+.flow
+	position: relative
+	width: 1020px
+	height: auto
+	margin: 0 0 0 90px
+	padding-top: 65px
+	font-family: "Microsoft JhengHei"
+	+rwd(mb)
+		width: 80%
+		margin-left: 10%
+		padding-top: 0
+		padding-bottom: 20%
+	&::before
+		content: ""
+		display: block
+		clear: both
+
+	img
+		width: 100%
+		display: block
+
+	.tag
+		width: 100%
+		position: relative
+		display: flex
+		margin-bottom: 45px
+		.icon
+			width: 70px
+			height: 70px
+			flex: none
+			+rwd(mb)
+				width: 60px
+				height: 60px
+			img
+				width: 100%
+				display: block
+		.txt
+			flex: 1
+			margin: 10px 0 0 13px
+			color: $color
+			h2
+				font-size: 25px
+				font-weight: bold
+				+rwd(mb)
+					font-size: 4.8vw
+				&::after
+					content: ""
+					display: block
+					width: 78px
+					height: 3px
+					background-color: $mc
+					margin: 15px 0 15px 0
+			p
+				font-size: 15px
+				line-height: 26px
+				+rwd(mb)
+					font-size: 3vw
+					line-height: 5vw
+
+.scebox
+	position: relative
+	width: 1020px
+	height: auto
+	margin: 0 0 0 90px
+	padding-top: 75px
+	font-family: "Microsoft JhengHei"
+	color: #fff
+	+rwd(mb)
+		width: 80%
+		margin-left: 10%
+		padding-bottom: 20%
+		padding-top: 0
+	&::before
+		content: ""
+		display: block
+		clear: both
+
+	img
+		width: 100%
+		display: block
+
+	.scetxt
+		width: 100%
+		margin: 0 0 40px 50px
+		+rwd(mb)
+			margin-left: 0
+		h2
+			font-size: 25px
+			font-weight: bold
+			margin-bottom: 10px
+			+rwd(mb)
+				font-size: 4.8vw
+			&::after
+				content: ""
+				display: block
+				width: 78px
+				height: 3px
+				background-color: $mc
+				margin: 10px 0
+
+		p
+			font-size: 15px
+			line-height: 26px
+			+rwd(mb)
+				font-size: 3vw
+				line-height: 5vw
+
+
+.flow .p_img,.scebox .p_img
+	display: block
+	+rwd(mb)
+		display: none
+
+.flow .m_img,.scebox .m_img
+	display: none
+	+rwd(mb)
+		display: block
+
+.teambox
+	position: relative
+	width: 1020px
+	height: auto
+	margin: 0 0 0 90px
+	padding-top: 55px
+	display: flex
+	+rwd(mb)
+		width: 80%
+		margin-left: 10%
+		display: block
+		padding-top: 0
+		padding-bottom: 20%
+	&::before
+		content: ""
+		display: block
+		clear: both
+	.info
+		width: 255px
+		flex-direction: row
+		+rwd(mb)
+			width: 100%
+		.pic
+			width: 230px
+			height: 230px
+			position: relative
+			margin: auto
+			overflow: hidden
+			+border-radius(230px)
+		.resume
+			width: 230px
+			position: relative
+			margin: 20px auto
+			color: $color
+			
+			h2
+				font-size: 16px
+				line-height: 23px
+				text-align: center		
+				&::after
+					content: ""
+					display: block
+					width: 230px
+					height: 3px
+					background-color: $mc
+					margin: 10px auto
+			p
+				font-size: 18px
+				font-weight: bold
+				text-align: center
+				font-family: "Microsoft JhengHei"
+				span
+					font-size: 12px
+
+			ul
+				width: 230px
+				margin-top: 20px
+				font-family: "Microsoft JhengHei"
+				li
+					list-style-type: disc
+					font-size: 13px
+					line-height: 20px
+					color: #787878
+					margin: 0 0 8px 15px
+					text-align: justify
+
+.newsbox
+	position: relative
+	width: 1020px
+	height: auto
+	margin: 0 0 0 90px
+	+rwd(mb)
+		width: 80%
+		margin-left: 10%
+		display: block
+		padding-bottom: 20%
+
+	&::before
+		content: ""
+		display: block
+		clear: both
+	.info
+		width: 255px
+		display: inline-flex
+		flex-wrap: nowrap
+		margin: 0 0 20px -4px
+		+rwd(mb)
+			width: 100%
+		.newmain
+			width: 240px
+			margin-right: 15px
+			+rwd(mb)
+				margin: auto
+		a
+			text-decoration: none
+			display: block
+			.newpic
+				width: 240px
+				height: 160px
+				overflow: hidden
+				img
+					width: 240px
+					height: 160px
+					display: block
+					margin: 0
+					filter: brightness(0.7)
+					@include transition (0.3s)
+
+			p
+				font-size: 12px
+				color: $mc
+				margin: 10px auto
+				@include transition (0.3s)
+
+			h2
+				font-size: 15px
+				height: 75px
+				color: #fff
+				line-height: 24px
+				@include transition (0.3s)
+				+rwd(mb)
+					height: auto
+
+			.btn
+				width: 90px
+				height: 30px
+				+border-radius(30px)
+				background-color: $mc
+				color: $color
+				text-align: center
+				font-size: 13px
+				line-height: 30px
+				margin: 20px auto
+				@include transition (0.3s)
+
+		& a:hover img
+			width: 250px
+			height: 170px
+			margin: -5px 0 0 -5px
+			filter: brightness(1)
+
+		& a:hover p
+			color: #fff
+
+		& a:hover h2
+			color: $mc
+
+		& a:hover .btn
+			background-color: #fff
+			color: $mc
+
+.contactbox
+	position: relative
+	width: 1020px
+	height: auto
+	margin: 0 0 0 90px
+	display: flex
+	+rwd(mb)
+		width: 80%
+		margin-left: 10%
+		display: block
+		padding-bottom: 20%
+
+	&::before
+		content: ""
+		display: block
+		clear: both
+	.address
+		flex: 1
+		h2
+			font-size: 20px
+			font-weight: bold
+			&::after
+				content: ""
+				display: block
+				width: 40px
+				height: 3px
+				background-color: $mc
+				margin: 15px 0
+		p
+			font-size: 15px
+			line-height: 26px
+			span
+				color: $mc
+			a
+				text-decoration: underline
+				color: $color
+				@include transition (0.3s)
+				&:hover
+					color: $mc
+		.btn2 a
+			width: 90px
+			height: 30px
+			display: block
+			+border-radius(30px)
+			background-color: $mc
+			color: $color
+			text-align: center
+			font-size: 13px
+			line-height: 30px
+			margin: 20px 0 20px 80px
+			text-decoration: none
+			@include transition (0.3s)
+			+rwd(mb)
+				margin: 20px auto 40px auto
+			&:hover
+				background-color: $color
+				color: #fff
+
+
+	.map
+		flex: none
+		width: 660px
+		height: 335px
+		+rwd(mb)
+			width: 100%
+			height: auto
+		iframe
+			width: 660px
+			height: 335px
+			+rwd(mb)
+				width: 100%
+				height: auto
+
+
