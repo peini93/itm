@@ -290,15 +290,16 @@ html,body
 	height: 630px
 	background: url(../img/about_itm.png) center 40px $color no-repeat
 	+rwd(mb)
-		height: 730px
+		height: 850px
 		background: url(../img/itm_bg_m_01.png) center bottom $color no-repeat
 		background-size: 100% auto
 
 
 .core
 	width: 100%
-	height: 2220px
-	background: url(../img/corebg.png) center #fff no-repeat
+	height: auto
+	background: url(../img/core_top.png) center top no-repeat, url(../img/core_bottom.png) center bottom no-repeat
+	background-color: #fff
 	+rwd(mb)
 		height: auto
 		background: url(../img/itm_bg_m_02.png) center top no-repeat, url(../img/itm_bg_m_03.png) center bottom no-repeat
@@ -308,7 +309,7 @@ html,body
 .sce
 	width: 100%
 	height: 2300px
-	background: url(../img/scbg.png) center #121213 no-repeat
+	background: url(../img/scbg.png) top center #121213 no-repeat
 	+rwd(mb)
 		height: auto
 		background: url(../img/itm_bg_m_04.png) center repeat
@@ -316,8 +317,9 @@ html,body
 
 .team
 	width: 100%
-	height: 1220px
-	background: url(../img/teambg.png) center #fff no-repeat
+	height: 1375px
+	background: url(../img/team_top.png) center top no-repeat, url(../img/team_bottom.png) center bottom no-repeat
+	background-color: #fff
 	+rwd(mb)
 		height: auto
 		background: url(../img/itm_bg_m_05.png) center top no-repeat, url(../img/itm_bg_m_06.png) center bottom no-repeat
@@ -425,7 +427,7 @@ html,body
 			color: #fff
 			margin-top: 40px
 			line-height: 26px
-			text-align: justify
+			// text-align: justify
 			+rwd(mb)
 				width: 90%
 				font-size: 3vw
@@ -474,7 +476,7 @@ html,body
 	width: 1020px
 	height: auto
 	margin: 0 0 0 90px
-	padding-top: 65px
+	padding: 65px 0
 	font-family: "Microsoft JhengHei"
 	+rwd(mb)
 		width: 80%
@@ -514,6 +516,7 @@ html,body
 				font-weight: bold
 				+rwd(mb)
 					font-size: 4.8vw
+					line-height: 6vw
 				&::after
 					content: ""
 					display: block
@@ -651,7 +654,7 @@ html,body
 					line-height: 20px
 					color: #787878
 					margin: 0 0 8px 15px
-					text-align: justify
+					text-justify: inter-ideograph
 
 .newsbox
 	position: relative
