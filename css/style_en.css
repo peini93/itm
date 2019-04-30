@@ -679,6 +679,8 @@ html, body {
   color: #fff;
   margin-top: 40px;
   line-height: 26px;
+  text-align: justify;
+  text-justify: inter-ideograph;
 }
 @media only screen and (max-width: 960px) {
   .all_box .tittle_left p {
@@ -794,11 +796,11 @@ html, body {
 .flow .tag .txt h2 {
   font-size: 25px;
   font-weight: bold;
+  line-height: 28px;
 }
 @media only screen and (max-width: 960px) {
   .flow .tag .txt h2 {
     font-size: 4.8vw;
-    line-height: 6vw;
   }
 }
 .flow .tag .txt h2::after {
@@ -857,6 +859,7 @@ html, body {
 }
 .scebox .scetxt h2 {
   font-size: 25px;
+  line-height: 28px;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -876,9 +879,11 @@ html, body {
 .scebox .scetxt p {
   font-size: 15px;
   line-height: 26px;
+  width: 900px;
 }
 @media only screen and (max-width: 960px) {
   .scebox .scetxt p {
+    width: 100%;
     font-size: 3vw;
     line-height: 5vw;
   }
@@ -982,7 +987,6 @@ html, body {
   line-height: 20px;
   color: #787878;
   margin: 0 0 8px 15px;
-  text-justify: inter-ideograph;
 }
 
 .newsbox {

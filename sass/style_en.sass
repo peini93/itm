@@ -427,7 +427,8 @@ html,body
 			color: #fff
 			margin-top: 40px
 			line-height: 26px
-			// text-align: justify
+			text-align: justify
+			text-justify: inter-ideograph
 			+rwd(mb)
 				width: 90%
 				font-size: 3vw
@@ -514,9 +515,9 @@ html,body
 			h2
 				font-size: 25px
 				font-weight: bold
+				line-height: 28px
 				+rwd(mb)
 					font-size: 4.8vw
-					line-height: 6vw
 				&::after
 					content: ""
 					display: block
@@ -527,6 +528,7 @@ html,body
 			p
 				font-size: 15px
 				line-height: 26px
+				// word-break: break-all
 				+rwd(mb)
 					font-size: 3vw
 					line-height: 5vw
@@ -560,6 +562,7 @@ html,body
 			margin-left: 0
 		h2
 			font-size: 25px
+			line-height: 28px
 			font-weight: bold
 			margin-bottom: 10px
 			+rwd(mb)
@@ -575,7 +578,10 @@ html,body
 		p
 			font-size: 15px
 			line-height: 26px
+			width: 900px
+			// word-break: break-all
 			+rwd(mb)
+				width: 100%
 				font-size: 3vw
 				line-height: 5vw
 
@@ -654,7 +660,7 @@ html,body
 					line-height: 20px
 					color: #787878
 					margin: 0 0 8px 15px
-					text-justify: inter-ideograph
+
 
 .newsbox
 	position: relative
