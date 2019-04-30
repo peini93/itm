@@ -506,7 +506,8 @@ html, body {
 .core {
   width: 100%;
   height: 2220px;
-  background: url(../img/corebg.png) center #fff no-repeat;
+  background: url(../img/core_top.png) center top no-repeat, url(../img/core_bottom.png) center bottom no-repeat;
+  background-color: #fff;
 }
 @media only screen and (max-width: 960px) {
   .core {
@@ -533,13 +534,13 @@ html, body {
 .team {
   width: 100%;
   height: 1220px;
-  background: url(../img/teambg.png) center #fff no-repeat;
+  background: url(../img/team_top.png) center top no-repeat, url(../img/team_bottom.png) center bottom no-repeat;
+  background-color: #fff;
 }
 @media only screen and (max-width: 960px) {
   .team {
     height: auto;
     background: url(../img/itm_bg_m_05.png) center top no-repeat, url(../img/itm_bg_m_06.png) center bottom no-repeat;
-    background-color: #fff;
     background-size: 100% auto;
   }
 }

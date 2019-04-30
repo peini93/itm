@@ -497,7 +497,7 @@ html, body {
 }
 @media only screen and (max-width: 960px) {
   .about {
-    height: 730px;
+    height: 750px;
     background: url(../img/itm_bg_m_01.png) center bottom #292b39 no-repeat;
     background-size: 100% auto;
   }
@@ -505,8 +505,9 @@ html, body {
 
 .core {
   width: 100%;
-  height: 2220px;
-  background: url(../img/corebg.png) center #fff no-repeat;
+  height: auto;
+  background: url(../img/core_top.png) center top no-repeat, url(../img/core_bottom.png) center bottom no-repeat;
+  background-color: #fff;
 }
 @media only screen and (max-width: 960px) {
   .core {
@@ -520,7 +521,7 @@ html, body {
 .sce {
   width: 100%;
   height: 2300px;
-  background: url(../img/scbg.png) center #121213 no-repeat;
+  background: url(../img/scbg.png) top center #121213 no-repeat;
 }
 @media only screen and (max-width: 960px) {
   .sce {
@@ -532,8 +533,9 @@ html, body {
 
 .team {
   width: 100%;
-  height: 1220px;
-  background: url(../img/teambg.png) center #fff no-repeat;
+  height: 1375px;
+  background: url(../img/team_top.png) center top no-repeat, url(../img/team_bottom.png) center bottom no-repeat;
+  background-color: #fff;
 }
 @media only screen and (max-width: 960px) {
   .team {
@@ -678,6 +680,7 @@ html, body {
   margin-top: 40px;
   line-height: 26px;
   text-align: justify;
+  text-justify: inter-ideograph;
 }
 @media only screen and (max-width: 960px) {
   .all_box .tittle_left p {
@@ -744,7 +747,7 @@ html, body {
   width: 1020px;
   height: auto;
   margin: 0 0 0 90px;
-  padding-top: 65px;
+  padding: 65px 0;
   font-family: "Microsoft JhengHei";
 }
 @media only screen and (max-width: 960px) {
@@ -793,6 +796,7 @@ html, body {
 .flow .tag .txt h2 {
   font-size: 25px;
   font-weight: bold;
+  line-height: 28px;
 }
 @media only screen and (max-width: 960px) {
   .flow .tag .txt h2 {
@@ -855,6 +859,7 @@ html, body {
 }
 .scebox .scetxt h2 {
   font-size: 25px;
+  line-height: 28px;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -874,9 +879,11 @@ html, body {
 .scebox .scetxt p {
   font-size: 15px;
   line-height: 26px;
+  width: 900px;
 }
 @media only screen and (max-width: 960px) {
   .scebox .scetxt p {
+    width: 100%;
     font-size: 3vw;
     line-height: 5vw;
   }
@@ -980,7 +987,6 @@ html, body {
   line-height: 20px;
   color: #787878;
   margin: 0 0 8px 15px;
-  text-align: justify;
 }
 
 .newsbox {
@@ -1053,7 +1059,7 @@ html, body {
 }
 .newsbox .info a h2 {
   font-size: 15px;
-  height: 75px;
+  height: 95px;
   color: #fff;
   line-height: 24px;
   -moz-transition: 0.3s;
