@@ -495,7 +495,7 @@ html, body {
 }
 @media only screen and (max-width: 960px) {
   .about {
-    height: 750px;
+    height: 800px;
     background: url(../img/itm_bg_m_01.png) center bottom #292b39 no-repeat;
     background-size: 100% auto;
   }
@@ -1056,10 +1056,10 @@ html, body {
   transition: 0.3s;
 }
 .newsbox .info a h2 {
-  font-size: 15px;
-  height: 95px;
+  font-size: 13px;
+  height: 100px;
   color: #fff;
-  line-height: 24px;
+  line-height: 20px;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   -webkit-transition: 0.3s;
