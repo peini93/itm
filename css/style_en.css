@@ -65,7 +65,7 @@ html, body {
   width: 430px;
   height: 50px;
   position: relative;
-  background: url(../img/loading.png) no-repeat;
+  background: url(../img/loading_en.png) no-repeat;
   margin: auto;
 }
 @media only screen and (max-width: 960px) {
@@ -333,9 +333,7 @@ html, body {
 }
 .kv .slogan .box h2 {
   font-size: 14.3px;
-  margin-top: 10px;
   letter-spacing: 1px;
-  line-height: 16px;
   font-family: "Roboto", sans-serif;
 }
 @media only screen and (max-width: 960px) {
