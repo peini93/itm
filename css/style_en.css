@@ -334,6 +334,7 @@ html, body {
 .kv .slogan .box h2 {
   font-size: 14.3px;
   letter-spacing: 1px;
+  line-height: 16px;
   font-family: "Roboto", sans-serif;
 }
 @media only screen and (max-width: 960px) {
@@ -356,10 +357,16 @@ html, body {
   }
 }
 .kv .slogan .box h3 {
-  font-size: 28px;
-  line-height: 36px;
-  font-family: "Russo One", sans-serif;
+  font-size: 50px;
+  line-height: 52px;
+  font-family: "Black Ops One", cursive;
   color: #11cdd4;
+}
+@media only screen and (max-width: 960px) {
+  .kv .slogan .box h3 {
+    font-size: 38px;
+    line-height: 42px;
+  }
 }
 .kv .slogan .box p {
   font-size: 17px;
