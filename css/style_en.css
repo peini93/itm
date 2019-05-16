@@ -356,9 +356,9 @@ html, body {
   }
 }
 .kv .slogan .box h3 {
-  font-size: 31px;
+  font-size: 28px;
   line-height: 36px;
-  font-weight: 900;
+  font-family: "Russo One", sans-serif;
   color: #11cdd4;
 }
 .kv .slogan .box p {
