@@ -334,7 +334,7 @@ html, body {
 .kv .slogan .box h2 {
   font-size: 14.3px;
   letter-spacing: 1px;
-  line-height: 16px;
+  line-height: 20px;
   font-family: "Roboto", sans-serif;
 }
 @media only screen and (max-width: 960px) {
@@ -376,10 +376,10 @@ html, body {
 }
 @media only screen and (max-width: 960px) {
   .kv .slogan .box p {
-    width: 93%;
+    width: 100%;
     margin: auto;
-    margin-top: 10px;
-    font-size: 4.2vw;
+    margin-top: 5px;
+    font-size: 1vw;
     line-height: 6vw;
   }
 }
