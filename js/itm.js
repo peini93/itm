@@ -13,7 +13,7 @@ $(function(){
 			loaderVPos: '50%',
 			splashVPos: '50%',
 			autoClose: true
-		}, function() { //callback function
+		}, function() { 
 		});
 
 		$(window).scroll(function(){
@@ -27,28 +27,28 @@ $(function(){
 			if(sx>=ah1 && sx<ah2){
 									ACTION(1);  
 									$(".b_m li a" ).removeClass('act');
-                  $(".b_m li:nth-of-type(1) a").addClass('act');    
-                }else if(sx>=ah2 && sx<ah3){
-                	ACTION(2); 
-                	$(".b_m li a" ).removeClass('act');
-                	$(".b_m li:nth-of-type(2) a").addClass('act');              	 
-                }else if(sx>=ah3 && sx<ah4){
-                	ACTION(3); 
-                	$(".b_m li a" ).removeClass('act');
-                	$(".b_m li:nth-of-type(3) a").addClass('act');  	              	        
-                }else if(sx>=ah4 && sx<ah5){
-                	ACTION(4);
-                	$(".b_m li a" ).removeClass('act');
-                	$(".b_m li:nth-of-type(4) a").addClass('act');       
-                }else if(sx>=ah5 && sx<ah6){
-                	ACTION(5);
-                	$(".b_m li a" ).removeClass('act');
-                	$(".b_m li:nth-of-type(5) a").addClass('act');	 
-                }else if(sx>=ah6){
-                	ACTION(6); 
-                	$(".b_m li a" ).removeClass('act');
-                	$(".b_m li:nth-of-type(6) a").addClass('act');   
-                }
+         $(".b_m li:nth-of-type(1) a").addClass('act');    
+   }else if(sx>=ah2 && sx<ah3){
+         ACTION(2); 
+         $(".b_m li a" ).removeClass('act');
+         $(".b_m li:nth-of-type(2) a").addClass('act');              	 
+   }else if(sx>=ah3 && sx<ah4){
+         ACTION(3); 
+									$(".b_m li a" ).removeClass('act');
+									$(".b_m li:nth-of-type(3) a").addClass('act');  	              	        
+			}else if(sx>=ah4 && sx<ah5){
+									ACTION(4);
+									$(".b_m li a" ).removeClass('act');
+									$(".b_m li:nth-of-type(4) a").addClass('act');       
+   }else if(sx>=ah5 && sx<ah6){
+									ACTION(5);
+									$(".b_m li a" ).removeClass('act');
+									$(".b_m li:nth-of-type(5) a").addClass('act');	 
+   }else if(sx>=ah6){
+									ACTION(6); 
+									$(".b_m li a" ).removeClass('act');
+									$(".b_m li:nth-of-type(6) a").addClass('act');   
+   }
 		})
 		GOTOP();
 		MENU();
@@ -79,7 +79,7 @@ $(function(){
 });
 
 function GOTOP(){
-	$('.gotop').on("click", function(){
+	$('.gotop,.logo').on("click", function(){
 	  	$('html,body').animate({scrollTop:0},800);
 	});
 	$(window).scroll(function(){
@@ -94,7 +94,7 @@ function GOTOP(){
 
 
 function MENU(){
- 	$(".b_m li:nth-of-type(1) a").on("click", function(){
+	$(".b_m li:nth-of-type(1) a").on("click", function(){
  			ACTION(1);
 			$('html,body').stop().animate({scrollTop:$("#a01").offset().top},800);
 			$(".b_m li a" ).removeClass('act');
@@ -122,7 +122,7 @@ function MENU(){
 			$(this).addClass('act');
 			return false;
 	});
-	$(".b_m li:nth-of-type(5) a").on("click", function(){
+	$(".b_m li:nth-of-type(5) a,.box a").on("click", function(){
 			ACTION(5);
 			$('html,body').stop().animate({scrollTop:$("#a05").offset().top},800);
 			$(".b_m li a" ).removeClass('act');
@@ -140,7 +140,7 @@ function MENU(){
 }
 
 function MM(){
- 	$(".m_m ul li:nth-of-type(1) a").on("click", function(){
+	$(".m_m ul li:nth-of-type(1) a").on("click", function(){
  			ACTION(1);
 			$('html,body').stop().animate({scrollTop:$("#a01").offset().top},800);
 			return false;
